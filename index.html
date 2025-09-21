@@ -5,140 +5,202 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="./estilo.css">
-
-<title>Curitiba</title>
+<title>Talita Morais FLC - Sobre Mim</title>
+<style>
+/* Layout profissional adicional */
+body {
+    background: #f5f6fa;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.header-bg {
+    background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+    color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2193b0;
+    margin-bottom: 16px;
+}
+.card {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+.skills li {
+    margin-bottom: 8px;
+}
+.contact a {
+    margin-right: 16px;
+}
+.carousel-inner img {
+    border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .header-bg {
+        padding: 24px 0 12px 0;
+    }
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+</style>
 </head>
 <body>
 <header>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
    <div class="navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <a class="navbar-brand" href="#">Curitiba</a>
-	  </div>
+	  <a class="navbar-brand" href="#">Talita Morais FLC</a>
+   </div>
    <div class="collapse navbar-collapse" id="menu">
-<ul class="nav navbar-nav" >
-<li><a href="#sobre-nos">Sobre nós</a></li>
-<li><a href="#clientes">Galeria</a></li>
-</ul>
-</div>
-</div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+        <li><a href="#sobre-nos">Curitiba</a></li>
+        <li><a href="#clientes">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+   </div>
+  </div>
 </nav>
 </header>
-<section class="container">
-<div id="sobre-nos" class="container">
-<h1> Sobre nós</h1>
-<img class="img-responsive" src="./img/sobreNos.jpg"/>
-<h4> Photo by Gabriel Rodrigues on Unsplash</h4>
 
-<div class="panel-group"id="painel-sobre">
-<div class="panel panel-default">
-<div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p1">
-<h3 class="panel-title"  > Desde 1693</h3>
+<div class="header-bg" id="sobre-mim">
+    <img src="foto-perfil.jpg" alt="Foto de Talita Morais" class="profile-img">
+    <h1>Talita Morais</h1>
+    <p style="max-width: 500px; margin: 0 auto;">Olá! Sou Talita Morais, apaixonada por tecnologia, desenvolvimento web e aprendizado contínuo. Este é meu espaço para compartilhar um pouco sobre mim e meus interesses.</p>
 </div>
 
-<div id="p1"class="collapse">
-<p class="panel-body" > Curitiba é a capital do Paraná, um dos três Estados que compõem a Região Sul do Brasil. Sua fundação oficial data de 29 de março de 1693 </p>
-</div>
-</div>
-
-<div class="panel panel-default">
-<div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p2">
-<h3 class="panel-title" > Terra do pinhão</h3>
-</div>
-
-<div id="p2"class="collapse">
-<p  class="panel-body"> Curitiba é uma palavra de origem Guarani: kur yt yba quer dizer "grande quantidade de pinheiros, pinheiral"</p>
-</div>
-</div>
-<div class="panel panel-default">
-<div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p3">
-<h3 class="panel-title"> O inverno em Curitiba</h3>
-</div>
-<div id="p3"class="collapse">
-<p class="panel-body"> A temperatura média da cidade no inverno é de 13 °C, podendo chegar a números negativos nos dias mais frios, de madrugada e de manhã. 
-Os meses de julho e agosto são os mais frios do ano, mas também os menos chuvosos. As manhãs de inverno costumam vir acompanhadas de uma neblina matinal <br>
-fonte: ricmais.com.br
-</p>
-</div>
-</div>
-</div>
-</section>
-<Section class="container">
-<h1 id="clientes" class="titulo-clientes"> Galeria</h1>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="./img/foto1.jpg" alt="...">
-      <div class="carousel-caption">
-	  <h3> Photo by Cassiano Psomas on pexels</h3>
-        ...
-      </div>
+<main class="container" style="margin-top:40px;">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <section class="card" id="skills">
+                <div class="card-body">
+                    <h2 class="text-center">Minhas habilidades</h2>
+                    <ul class="list-unstyled text-center skills">
+                        <li><span class="label label-primary">HTML</span> <span class="label label-info">CSS</span> <span class="label label-success">JavaScript</span></li>
+                        <li>Design Responsivo</li>
+                        <li>Comunicação</li>
+                        <li>Aprendizado rápido</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
-    <div class="item">
-      <img src="./img/foto2.jpg" alt="...">
-      <div class="carousel-caption">
-	  <h3> Photo by Koala on Unsplash</h3>
-        ...
-      </div>
-    </div>
-	<div class="item">
-      <img src="./img/foto3.jpg" alt="...">
-      <div class="carousel-caption">
-	   <h3> Photo by Cassiano Psomas on Unsplash</h3>
-        ...
-      </div>
-    </div>
-    ...
-  </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <section class="card" id="sobre-nos">
+                <div class="card-body">
+                    <h2 class="text-center">Curitiba</h2>
+                    <img class="img-responsive center-block" src="./img/sobreNos.jpg" style="border-radius:8px;max-width:400px"/>
+                    <h4 class="text-center" style="margin-top:8px;">Photo by Gabriel Rodrigues on Unsplash</h4>
+                    <div class="panel-group" id="painel-sobre">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p1">
+                                <h3 class="panel-title">Desde 1693</h3>
+                            </div>
+                            <div id="p1" class="collapse">
+                                <p class="panel-body">Curitiba é a capital do Paraná, um dos três Estados que compõem a Região Sul do Brasil. Sua fundação oficial data de 29 de março de 1693.</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p2">
+                                <h3 class="panel-title">Terra do pinhão</h3>
+                            </div>
+                            <div id="p2" class="collapse">
+                                <p class="panel-body">Curitiba é uma palavra de origem Guarani: kur yt yba quer dizer "grande quantidade de pinheiros, pinheiral".</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p3">
+                                <h3 class="panel-title">O inverno em Curitiba</h3>
+                            </div>
+                            <div id="p3" class="collapse">
+                                <p class="panel-body">A temperatura média da cidade no inverno é de 13 °C, podendo chegar a números negativos nos dias mais frios, de madrugada e de manhã. Os meses de julho e agosto são os mais frios do ano, mas também os menos chuvosos. As manhãs de inverno costumam vir acompanhadas de uma neblina matinal.<br>fonte: ricmais.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
-<section class="profile">
-            <img src="foto-perfil.jpg" alt="Foto de Talita Morais" class="profile-img">
-            <h1>Talita Morais</h1>
-            <p>Olá! Sou Talita Morais, apaixonada por tecnologia, desenvolvimento web e aprendizado contínuo. Este é meu espaço para compartilhar um pouco sobre mim e meus interesses.</p>
-        </section>
-        <section class="skills">
-            <h2>Minhas habilidades</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Design Responsivo</li>
-                <li>Comunicação</li>
-                <li>Aprendizado rápido</li>
-            </ul>
-        </section>
-        <section class="contact">
-            <h2>Contato</h2>
-            <a href="mailto:talita@email.com">Email</a> |
-            <a href="https://www.linkedin.com/in/talitamorais" target="_blank">LinkedIn</a>
-        </section>
-    </main>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <section class="card" id="clientes">
+                <div class="card-body">
+                    <h2 class="text-center titulo-clientes">Galeria</h2>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./img/foto1.jpg" alt="Foto 1">
+                                <div class="carousel-caption">
+                                    <h3>Photo by Cassiano Psomas on pexels</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./img/foto2.jpg" alt="Foto 2">
+                                <div class="carousel-caption">
+                                    <h3>Photo by Koala on Unsplash</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./img/foto3.jpg" alt="Foto 3">
+                                <div class="carousel-caption">
+                                    <h3>Photo by Cassiano Psomas on Unsplash</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="row" id="contato">
+        <div class="col-md-6 col-md-offset-3">
+            <section class="card contact text-center" style="padding:24px;">
+                <h2>Contato</h2>
+                <a href="mailto:talita@email.com" class="btn btn-info"><span class="glyphicon glyphicon-envelope"></span> Email</a>
+                <a href="https://www.linkedin.com/in/talitamorais" target="_blank" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> LinkedIn</a>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center" style="margin:32px 0 16px 0; color:#888;">
+    &copy; 2024 Talita Morais FLC. Todos os direitos reservados.
+</footer>
 
 <script src="./jquery.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
-	
 </body>
 </html>
