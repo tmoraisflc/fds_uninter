@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.profile {
+    text-align: center;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    background: #e3e3e3;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+}
+.contact a {
+    color: #0077b5;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
